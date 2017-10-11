@@ -1,12 +1,14 @@
+package SystemAnalysis;
+
 public class Conta {
 
-    private int saldo;
+    private double saldo;
     
-    public Conta(int saldo) {
+    public Conta(double saldo) {
         this.saldo = saldo;
     }
     
-    public int getSaldo(){
+    public double getSaldo(){
         return saldo;
     }   
             
@@ -21,6 +23,12 @@ public class Conta {
     public void saca(double s){
         this.saldo -= s;
     }
+    
+    public void taxa(double t){
+        this.saldo = saldo + ((t/100)*saldo);
+    }
+    
+    
     
 
 
