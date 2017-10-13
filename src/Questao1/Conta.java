@@ -1,8 +1,14 @@
 package Questao1;
 
-public class Conta {
+public class Conta{
 
     double saldo;
+    int i;
+    
+    public Conta(){
+        i = 1;
+    }
+    
     
     public double getSaldo(){
         return saldo;
@@ -21,6 +27,6 @@ public class Conta {
     }
     
     public void taxa(double t){
-        this.saldo = saldo + ((t/100)*saldo);
+        this.saldo = saldo + (((t/100)*saldo)*i);
     }  
 }
