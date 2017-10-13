@@ -7,10 +7,21 @@ public class main{
         
         Scanner sc = new Scanner(System.in);
         Conta conta = new Conta();
+        ContaCorrente cc = new ContaCorrente();
+        ContaPoupança cp = new ContaPoupança();
+        
         
         System.out.println("Insira o Valor Inicial da Conta");
         conta.saldo = sc.nextDouble();
-
+        cc.saldo = conta.saldo;
+        cp.saldo = conta.saldo;
+        
+        conta.taxa(20);
+        cc.taxa(20);
+        cp.taxa(20);
+        
+        System.out.println(conta.saldo + "  " + cc.saldo + "  " + cp.saldo);
+        
     }
 }
 
