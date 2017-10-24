@@ -1,4 +1,4 @@
-package InheritanceAndPolymorphism;
+package Question1;
 public class Biologo {
         
     public void analisar(Animal animal){

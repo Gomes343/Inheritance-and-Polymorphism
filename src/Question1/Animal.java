@@ -1,4 +1,4 @@
-package InheritanceAndPolymorphism;
+package Question1;
 public class Animal {
    
    String nome;
