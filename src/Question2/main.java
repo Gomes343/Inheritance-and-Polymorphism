@@ -1,4 +1,4 @@
-package Questao1;
+package Question2;
 
 import java.util.Scanner;
 
@@ -20,8 +20,12 @@ public class main{
         cc.taxa(20);
         cp.taxa(20);
         
-        System.out.println(conta.saldo + "  " + cc.saldo + "  " + cp.saldo);
+        System.out.println("Conta   CC     CP\n" + conta.saldo + "  " + cc.saldo + "  " + cp.saldo);
         
+        System.out.println("Gostaria de fazer um Deposito? informe o valor: ");
+        cc.depositar(sc.nextInt());
+        
+        System.out.println("Conta   CC     CP\n" + conta.saldo + "  " + cc.saldo + "  " + cp.saldo);
     }
 }
 

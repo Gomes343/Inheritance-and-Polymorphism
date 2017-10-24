@@ -1,4 +1,4 @@
-package Questao1;
+package Question2;
 
 public class ContaCorrente extends Conta{
     
@@ -6,4 +6,7 @@ public class ContaCorrente extends Conta{
         i = 2;
     }
     
+    public void depositar(int deposito){
+       saldo += deposito - 0.10;
+    }    
 }

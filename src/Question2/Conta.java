@@ -1,8 +1,8 @@
-package Questao1;
+package Question2;
 
 public class Conta{
 
-    double saldo;
+    protected double saldo;
     int i;
     
     public Conta(){
