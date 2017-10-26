@@ -4,12 +4,14 @@ public class Mamifero extends Animal{
    
    String alimento;
     
-   public Mamifero(String nome, String cor,String alimento, int comprimento, float velocidade){
+   public Mamifero(String nome, String cor,String alimento, int comprimento, float velocidade,int patas){
       super.nome = nome;
       this.alimento = alimento;
       super.cor = cor;
       super.comprimento = comprimento;
-      super.velocidade = velocidade;       
+      super.velocidade = velocidade;    
+      super.patas = patas;
+      super.ambiente = "Terra";
    }
    
    public void alterarAlimento(String a){

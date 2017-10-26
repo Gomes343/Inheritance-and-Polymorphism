@@ -1,27 +1,6 @@
 package Question3;
 public class Main {
    public static void main (String[]args){
-      
-      Mamifero[] m = new Mamifero[10];
-      
-       
-      
-      Mamifero p = new Mamifero("Peixao","peixe","teste",23,230);
-      
-      
-    
-      
-      System.out.println(m[0].dados());
-      
-       
-       
-       
-       
-       
-       
-       
-       
-       
 /*
 Um animal contém um nome, comprimento, número de patas (o padrão é 4), uma cor, ambiente e uma velocidade (em m/s).
 Um peixe é um animal, tem 0 patas, o seu ambiente é o mar (padrão), cor cinzenta (padrão). Além disso, o peixe tem como característica: barbatanas e cauda.

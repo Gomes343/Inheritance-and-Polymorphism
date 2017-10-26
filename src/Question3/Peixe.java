@@ -8,6 +8,9 @@ public class Peixe extends Animal{
        this.caracteristica = caracteristica;
        super.comprimento = comprimento;
        super.velocidade = velocidade;
+       super.patas = 0;
+       super.ambiente = "mar";
+       super.cor = "cinzento";
    }
    
    public void alterarCaracteristica(String c) {

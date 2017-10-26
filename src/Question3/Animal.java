@@ -8,14 +8,14 @@ public class Animal{
    protected String ambiente;
    protected float velocidade;
    
-   public Animal(String nome, int comprimento, int patas, String cor, String ambiente, float velocidade){
+   /*public Animal(String nome, int comprimento, int patas, String cor, String ambiente, float velocidade){
        this.nome = nome;
        this.comprimento = comprimento;
        this.patas = patas;
        this.cor = cor;
        this.ambiente = ambiente;
        this.velocidade = velocidade;
-   }
+   }*/
    
    public void alterarNome(String n){
       nome = n;
