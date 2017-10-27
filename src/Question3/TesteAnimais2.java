@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class TesteAnimais2 {
    public static void main(String[]args){
       Scanner sc = new Scanner(System.in);       
-      Peixe[] peixes = new Peixe[9];
-      Mamifero[] mamiferos = new Mamifero[9];
+      Peixe[] peixes = new Peixe[10];
+      Mamifero[] mamiferos = new Mamifero[10];
 
-      String nome,carac,teste = "sim",cor,alimento;
+      String nome,carac,teste,cor,alimento;
       int compr,patas;
       float velo;
       
 
-      for(int i = 0 ; "sim".equals(teste); i++ ){
+      for(int i = 0 ; i<peixes.length; i++ ){
           
           System.out.println("Insira o Nome do Peixe: ");
           nome = sc.nextLine();
@@ -32,6 +32,9 @@ public class TesteAnimais2 {
           System.out.println("Gostaria de adicionar mais um? Lembrando limite de 10");
           sc.nextLine();
           teste = sc.nextLine();
+            if("nao".equals(teste)){
+                break;
+            }
            
       }
     
@@ -63,17 +66,24 @@ public class TesteAnimais2 {
             }
       }
 
-      
-       for (Peixe peixe : peixes) {
-           if(peixe){
+
+       for (int i = 0; i < peixes.length; i++){
+           if(peixes[i] == null){
                break;
+           }else{
+           System.out.println(peixes[i].dados());
+            }
            }
-           peixe.dados();
-       }
+       
       
-       for (Mamifero mamifero : mamiferos) {
-           mamifero.dados();
-       }
+       for (int i = 0; i<mamiferos.length; i++){
+           if(mamiferos[i] == null){
+               break;
+           }else{
+               System.out.println(mamiferos[i].dados());
+            }
+           }
+
 
    }
 }
